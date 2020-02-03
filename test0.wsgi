@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import sys
-sys.path.insert(0,'/var/www/test0/')
-sys.path.insert(0,'/var/www/test0/test0/')
+APPNAME='test0'
+sys.path.insert(0,f'/var/www/{APPNAME}/')
+sys.path.insert(0,f'/var/www/{APPNAME}/{APPNAME}/')
 
 import logging
 logging.basicConfig(stream=sys.stderr)

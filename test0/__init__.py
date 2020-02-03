@@ -5,7 +5,8 @@
 
 from flask import *
 from os import urandom, path
-DIR = path.dirname(__file__) + '/'
+
+DIR = os.path.dirname(__file__) + '/'
 
 app = Flask(__name__)
 app.secret_key = urandom(32)
